@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautlin | RTL & Otaku</title>
+    <style>
+        body { background: #0b0e14; color: #e0e0e0; font-family: 'Segoe UI', sans-serif; margin: 0; }
+        nav { background: #1a1f29; padding: 1rem; position: fixed; width: 100%; top: 0; display: flex; justify-content: space-around; }
+        header { height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.alphacoders.com/605/605592.png'); background-size: cover; }
+        .container { padding: 4rem 2rem; max-width: 1000px; margin: auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: #1a1f29; padding: 20px; border-radius: 8px; border-left: 4px solid #00d4ff; }
+        h2 { color: #00d4ff; border-bottom: 1px solid #333; padding-bottom: 10px; }
+        .anime-list { color: #ff007a; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#vlsi" style="color:white; text-decoration:none;">VLSI & Projects</a>
+    <a href="#hobby" style="color:white; text-decoration:none;">Anime & Manga</a>
+</nav>
+
+<header>
+    <h1>BEAUTLIN S.</h1>
+    <p>RTL Engineer | RISC-V Enthusiast | Nakama</p>
+</header>
+
+<div class="container" id="vlsi">
+    <h2>Hardware Design & Projects</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>AXI-SM4 Crypto Core</h3>
+            <p>Developed at CDAC. Handled register mapping and race condition debugging. Optimized for high-speed encryption.</p>
+        </div>
+        <div class="card">
+            <h3>Quantized Neural Networks</h3>
+            <p>Benchmarking BitNet architecture on Shakti RISC-V cores. Bridging AI and Silicon.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="hobby">
+    <h2>The Watchlist (Hobbys)</h2>
+    <div class="grid">
+        <div class="card" style="border-left-color: #ff007a;">
+            <h3>Top Picks</h3>
+            <p class="anime-list">One Piece, Solo Leveling, Jujutsu Kaisen</p>
+            <p>Currently hyped for: <i>Where Winds Meet</i> (Gaming)</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
